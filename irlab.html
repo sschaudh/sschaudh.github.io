@@ -120,6 +120,25 @@ words or phrases in that tweet. For this method a lexicon (a dictionary) of word
 
 
 <h4 style="color: #2e6c80;">Literature Survey</h4>
+<p>In the literature survey we review the the three class of methods in detail.</p>
+
+<p><b>Lexicon Based Method:</b> In  the  lexicon-based  method
+the unigrams which are found in the lexicon are assigned a polarity score, the overall
+polarity score of the text is then computed as sum of the polarities of the unigrams.  For this method a lexicon (a dictionary)
+of words with assigned to them polarity is required. Examples of the existing lexicons
+include: Opinion  Lexicon,  SentiWordNet, AFINN Lexicon. The sentiment score(S) of the tweet(T)
+can be computed as the average of the polarities conveyed by each of the words in the text. The methodology for the sentiment calculation can be described with the following steps:</p>
+
+<p>Pre-processing: The text undergoes pre-processing steps: POS tagging, stemming, stop-words removal, tokenisations into N-grams. The outcome of the pre-processing is a set of tokens or a bag-of-words.</p>
+
+<p>Checking each token for its polarity in the lexicon: Each word from the bag-of-words is compared against the lexicon. If the word is found in the lexicon, the polarity `w' of that word is added to the sentiment score of the text. If the word is
+not found in the lexicon its polarity is considered to be equal to zero.</p>
+
+<p>Calculating the sentiment score of the tweet: After assigning polarity scores to all words comprising the tweet, the final sentiment score of the text is calculated by dividing the sum of the scores of words caring the sentiment by the number of such
+words.</p>
+
+<p>As mentioned earlier, the biggest advantage of this method is that it does not require any labeled training data for sentiment analysis. But it does require a lexicon, for computing polarity of the words in the tweets. Hence it majorly depends on how many words does the lexicon contain that are found in the text. This makes the approach susceptible to high precision but low recall issues.</p>
+
 <hr>
 <h4 style="color: #2e6c80;">Dataset</h4>
 <hr>
