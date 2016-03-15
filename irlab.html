@@ -139,6 +139,25 @@ words.</p>
 
 <p>As mentioned earlier, the biggest advantage of this method is that it does not require any labeled training data for sentiment analysis. But it does require a lexicon, for computing polarity of the words in the tweets. Hence it majorly depends on how many words does the lexicon contain that are found in the text. This makes the approach susceptible to high precision but low recall issues.</p>
 
+<p>ML Based Approach: A Machine Learning Approach for TSA is a supervised algorithm that analyses
+data that were previously labelled as positive,
+negative or neutral; extracts features that model
+the  differences  between  different  classes,  and
+infers a function, that can be used for classifying new examples unseen before.</p>
+
+<p>The most popular learning algorithms for TSA are Support Vector Machines  (SVMs),  Naive  Bayes, Decision Trees. In previous SVMs have shown the best performance with unigram features. Further, decision tree classifier
+was shown to perform nearly as well as an SVM classifier. The process of machine learning text classification can be broken into the following
+steps:</p>
+
+<p>Data  Pre-processing: Before  training  the  classifiers  each  text  needs  to  be  pre-
+processed and presented as an array of tokens.</p>
+
+<p>Feature generation: Features are tweet attributes that are useful for capturing patterns  in  data.  The  most  popular  features  used  in  machine  learning  classification are the presence or the frequency of unigrams extracted during the pre-processing step. Apart from the n-grams, additional features can be created to improve the over-
+all quality of text classification. The most common features that are used for this
+purpose include: Number of words with positive/negative sentiment; Number of negations; Length of a message; Number of exclamation marks; Number of different parts-of-speech in a text (for example, number of nouns,
+adjectives, verbs) etc. </p>
+
+<p>Learning an Algorithm: After feature generation steps the data is represented in a form that can be used to train an algorithm. Even though many classifiers have been tested for TSA purposes, we aim to SVM as SVMs have shown to outperform other classification techniques. </p>
 <hr>
 <h4 style="color: #2e6c80;">Dataset</h4>
 <hr>
