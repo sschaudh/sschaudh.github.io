@@ -33,10 +33,30 @@
 <hr>
 <h4 style="color: #2e6c80;">Abstract</h4>
 <p> The aim of this project is to review and compare some of the promiment techniques that have been used for Twitter Sentiment Analysis(TSA) in recent literature. 
-The case study particularly looks at three type of supervised TSA methods, namely, Lexicon based, Machine Learning based, and combination of both. 
+The case study particularly looks at three type of TSA methods, namely, Lexicon based, Machine Learning based, and combination of both. 
 The empirical study involves implementation of these techniques as well as comparsion of their performance on a well-known Twitter dataset. We also aim to provide the detailed results of this comparison and the underlying implemented functions for usage.</p>
 <hr>
 <h4 style="color: #2e6c80;">Introduction</h4>
+<p>With the booming of microblogs on the Web, people have begun to express their opinions on a wide
+variety of topics on Twitter and other similar services. Sentiment analysis on entities (e.g., products,
+organizations, people, etc.) in tweets (posts on Twitter) thus becomes a rapid and effective way of
+gauging public opinion for business marketing or social studies. However, Twitter's unique characteristics
+give rise to new problems for current sentiment analysis methods, which originally focused on large
+opinionated corpora such as product reviews. The informal and specialized language used
+in tweets, as well as the very nature of the microblogging
+domain make Twitter Sentiment Analysis(TSA) a very different
+task.</p>
+
+<p>Just in the past few years there have been a number of papers looking at Twitter Sentiment Analysis. As part of this project we review and compare some of the most prominent approaches in the recent literature. In this project, we present three main types of methods of TSA: 1) Lexicon Based Approach [1], [2] with further improvements by adding features of hashtags and emoticons [3], [4] 2) Machine Learning(ML) Approach [5] and 3) Combinations of Lexicon and ML based approaches. The main two methods of sentiment analysis, lexicon-based method (unsupervised
+approach) and machine learning based method (supervised approach), both rely on the
+bag-of-words. Each of these methods has its advantages and shortcomings which we discuss in the literature survey section. We also plan to show that accuracy of the sentiment analysis for Twitter can be improved by combining the two lexicon and ML based approaches as they complement their individual shortcomings.</p>
+
+<p>Lexicon Based Methodology: Lexicon-based approach calculates the sentiment of a given tweet from the polarity of the
+words or phrases in that tweet. For this method a lexicon (a dictionary) of words with assigned polarity is required. Examples of the existing lexicons include: Opinion  Lexicon, SentiWordNet, AFINN Lexicon. The main advantage of this approach is that it does not require and labeled training data, but a major shortcoming is that it needs lexicons, to measure polarity scores of words in the tweets and hence this approach faces issue of high precision but low recall.</p>
+
+<p>Machine Learning Based Approach: The machine learning-based approach typically trains sentiment classifiers using features such as unigrams or bigrams. Most techniques use some form of supervised learning by applying different learning techniques such as Naive Bayes(NB), Maximum Entropy and Support Vector Machines(SVM). These methods need manual labeling of training examples for each application domain. Although it has been show in the past that SVMs with unigrams outperform other approaches, they need labeled training data which is a major disadvantage.</p>
+
+<p>Combinations of Lexicon and ML Based Approach: There has been an increasing interest in combining these two types of approaches to alleviate the issues related with the individual methods. The combined approach benefits in either of the two ways: 1) It uses lexicon based features as additional features to improve the performance of ML based approach 2) It uses lexicons to obtain training data for the ML based approach. This method is hence more desirable for practical applications and experimental results have shown that they outperform other state-of-the-art approaches.</p>
 <hr>
 <h4 style="color: #2e6c80;">Timeline</h4>
 <table border="1" cellpadding="3" cellspacing="3">
