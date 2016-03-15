@@ -19,14 +19,14 @@
 <nav>
     		<ul>
         		<li><a href="#abs">Abstract</a></li>
-	        	<li><a href="/">Introduction</a></li>
-        		<li><a href="/">Timeline</a></li>
-        		<li><a href="/">Literature Survey</a></li>
-        		<li><a href="/">Dataset</a></li>
-        		<li><a href="/">Experimental Study</a></li>
-        		<li><a href="/">Results</a></li>
-        		<li><a href="/">References</a></li>
-        		<li><a href="/">Downloads</a></li>
+	        	<li><a href="#intro">Introduction</a></li>
+        		<li><a href="#time">Timeline</a></li>
+        		<li><a href="#LS">Literature Survey</a></li>
+        		<li><a href="#data">Dataset</a></li>
+        		<li><a href="#ES">Experimental Study</a></li>
+        		<li><a href="#res">Results</a></li>
+        		<li><a href="#ref">References</a></li>
+        		<li><a href="#dow">Downloads</a></li>
         		
     		</ul>
 </nav>
@@ -36,7 +36,7 @@
 The case study particularly looks at three type of TSA methods, namely, Lexicon based, Machine Learning based, and combination of both. 
 The empirical study involves implementation of these techniques as well as comparsion of their performance on a well-known Twitter dataset. We also aim to provide the detailed results of this comparison and the underlying implemented functions for usage.</p>
 <hr>
-<h4 style="color: #2e6c80;">Introduction</h4>
+<h4 id="intro" style="color: #2e6c80;">Introduction</h4>
 <p>With the booming of microblogs on the Web, people have begun to express their opinions on a wide
 variety of topics on Twitter and other similar services. Sentiment analysis on entities (e.g., products,
 organizations, people, etc.) in tweets (posts on Twitter) thus becomes a rapid and effective way of
@@ -58,7 +58,7 @@ words or phrases in that tweet. For this method a lexicon (a dictionary) of word
 
 <p>Combinations of Lexicon and ML Based Approach: There has been an increasing interest in combining these two types of approaches to alleviate the issues related with the individual methods. The combined approach benefits in either of the two ways: 1) It uses lexicon based features as additional features to improve the performance of ML based approach 2) It uses lexicons to obtain training data for the ML based approach. This method is hence more desirable for practical applications and experimental results have shown that they outperform other state-of-the-art approaches.</p>
 <hr>
-<h4 style="color: #2e6c80;">Timeline</h4>
+<h4 id="time" style="color: #2e6c80;">Timeline</h4>
 <table border="1" cellpadding="3" cellspacing="3">
 <tr>
 <th>Task</th>
@@ -119,7 +119,7 @@ words or phrases in that tweet. For this method a lexicon (a dictionary) of word
 <hr>
 
 
-<h4 style="color: #2e6c80;">Literature Survey</h4>
+<h4 id="LS" style="color: #2e6c80;">Literature Survey</h4>
 <p>In the literature survey we review the the three class of methods in detail.</p>
 
 <p><b>Lexicon Based Method:</b> In  the  lexicon-based  method
@@ -177,18 +177,18 @@ the whole process has no manual labeling. The pro-
 posed approach is an unsupervised method except for
 the initial opinion lexicon, which is publicly available.</p>
 <hr>
-<h4 style="color: #2e6c80;">Dataset</h4>
+<h4 id="data" style="color: #2e6c80;">Dataset</h4>
 <p>The dataset we are going to use for this project is the <b>SemEval 2015 Task 10 Dataset</b> for Twitter Polarity Classification. 
 The dataset can be found here: <li><a href="http://alt.qcri.org/semeval2015/task10/">SemEval 2015 Dataset</a></li></p>
 
 <p>We pre-processed the dataset to remove stop words, lemmatization, and tokenization. We further computed unigram features from the tweets. 
 We use binary features i.e. presence or absence of the word rather than counts or TF-IDF since tweets are particularly short text.</p>
 <hr>
-<h4 style="color: #2e6c80;">Experimental Study</h4>
+<h4 id="ES" style="color: #2e6c80;">Experimental Study</h4>
 <hr>
-<h4 style="color: #2e6c80;">Results</h4>
+<h4 id="res" style="color: #2e6c80;">Results</h4>
 <hr>
-<h4 style="color: #2e6c80;">References</h4>
+<h4 id="ref" style="color: #2e6c80;">References</h4>
 <p> [1] Maite Taboada, Julian Brooke, Milan Tofiloski, Kimberly Voll, and Manfred Stede. 2011. Lexicon-based methods for sentiment analysis. Comput. Linguist. 37, 2 (June 2011), 267-307. DOI=http://dx.doi.org/10.1162/COLI_a_00049.</p>
 <p> [2] Kouloumpis, Efthymios; Wilson, Theresa; Moore, Johanna D. Twitter Sentiment Analysis: The Good the Bad and the OMG!. Proceedings of the Fifth International Conference on Weblogs and Social Media, Barcelona, Catalonia, Spain, July 17-21, 2011. AAAI Press, 2011. p. 538-541.</p>
 <p> [3] Federico Alberto Pozzi, Elisabetta Fersini, Enza Messina, and Daniele Blanc. Enhance Polarity Classification on Social Media through Sentiment-based Feature Expansion. WOA@AI*IA, volume 1099 of CEUR Workshop Proceedings, page 78-84. CEUR-WS.org, (2013).</p>
@@ -197,7 +197,7 @@ We use binary features i.e. presence or absence of the word rather than counts o
 <p> [6] Olga Kolchyna, Tharsis T. P. Souza, Philip Treleaven, Tomaso Aste. Twitter Sentiment Analysis: Lexicon Method, Machine Learning Method and Their Combination. CoRR, 2015.</p>
 <p> [7] Andrius Mudinas, Dell Zhang, and Mark Levene. 2012. Combining lexicon and learning based approaches for concept-level sentiment analysis. In Proceedings of the First International Workshop on Issues of Sentiment Discovery and Opinion Mining (WISDOM '12). ACM, New York, NY, USA, , Article 5 , 8 pages. DOI=http://dx.doi.org/10.1145/2346676.2346681.</p>
 <hr>
-<h4 style="color: #2e6c80;">Downloads</h4>
+<h4 id="dow" style="color: #2e6c80;">Downloads</h4>
 <hr>
 	</body>
 </html>
