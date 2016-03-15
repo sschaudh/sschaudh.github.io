@@ -158,6 +158,24 @@ purpose include: Number of words with positive/negative sentiment; Number of neg
 adjectives, verbs) etc.</p>
 
 <p>Learning an Algorithm: After feature generation steps the data is represented in a form that can be used to train an algorithm. Even though many classifiers have been tested for TSA purposes, we aim to SVM as SVMs have shown to outperform other classification techniques.</p>
+
+<p><b>Combination Method:</b> Accuracy of the sentiment analysis for Twitter can be improved by combining the Lexicon and ML approaches. This is beneficial for two reasons. First, these techniques can demonstrate better performance compared to individual techniques. Secondly, they help overcome the issues related to the Lexicon and ML based methods. By combining the two, not only the recall is improved, but also the need for labeled training is data is also alleviated. The combination of these methods generally takes place in two ways where either lexicon scores are used as additional features for ML based method or lexicons are used to obtain additional training data for ML based approach. For the first appproach, during the first stage a lexicon score is calculated based on the polarity of the words which
+compose the text, during the second stage a machine learning model is learnt that uses
+the lexicon score as one of the features.</p> 
+
+<p>In the second method, first a lexicon-based method is employed for entity-
+level sentiment analysis. This is useful to extract some
+additional opinionated indicators (e.g. words and to-
+kens) on the results of
+the lexicon-based method. With the help of the new
+opinionated indicators, additional opinionated tweets
+can be identified. Afterwards, a sentiment classifier is
+trained to assign sentiment polarities for entities in the
+newly-identified tweets. The training data for the clas-
+sifier is the result of the lexicon-based method. Thus,
+the whole process has no manual labeling. The pro-
+posed approach is an unsupervised method except for
+the initial opinion lexicon, which is publicly available.</p>
 <hr>
 <h4 style="color: #2e6c80;">Dataset</h4>
 <hr>
